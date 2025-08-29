@@ -1,0 +1,75 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    background-color: rgb(12, 67, 155);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(242, 232, 232);
+    padding: 20px;
+    width: 320px;
+    max-width: 95%;
+  }
+  .display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #1e1d1d;
+  }
+  
+  button.operator {
+    background-color: #b3c59f;
+  }
+  
+  button.equal {
+    background-color: #06d6a0;
+    color: white;
+  }
+  
+  button.clear {
+    background-color: #d30e3c;
+    color: white;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .display {
+      font-size: 1.5em;
+    }
+  
+    button {
+      padding: 15px;
+      font-size: 1em;
+   
+    }};
